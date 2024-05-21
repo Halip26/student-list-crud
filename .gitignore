@@ -1,0 +1,9 @@
+__pycache__/
+
+env/
+
+database/
+
+api.py
+
+*.json
