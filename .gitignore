@@ -2,8 +2,10 @@ __pycache__/
 
 env/
 
-database/
+databases/
 
 api.py
 
 *.json
+
+*.sql
