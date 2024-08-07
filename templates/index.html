@@ -17,6 +17,16 @@
       href="{{ url_for('static', filename='images/logo.png') }}"
       type="image/x-icon"
     />
+
+    <!-- Add elemen style to Remove Arrows/Spinners -->
+    <style>
+      /* for Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -54,7 +64,7 @@
           </div>
           {%endfor%} {%endif%} {%endwith%}
 
-          <!-- Enter New Student Modal -->
+          <!-- A place to enter new student called modal or floating form -->
           <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -69,7 +79,7 @@
                     type="button"
                     class="close"
                     data-dismiss="modal"
-                    aria-label="Close"
+                    aria-label="close"
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -84,18 +94,18 @@
                         name="name"
                         class="form-control"
                         id="exampleFormControlInput1"
-                        placeholder="Enter Full Name"
+                        placeholder="Enter Your Full Name"
                       />
                     </div>
 
                     <div class="form-group">
                       <label>Email</label>
                       <input
-                        type="text"
+                        type="email"
                         name="email"
                         class="form-control"
                         id="exampleFormControlInput1"
-                        placeholder="Enter Email"
+                        placeholder="example@domain.com"
                       />
                     </div>
 
@@ -103,10 +113,10 @@
                       <label>Phone Number</label>
                       <input
                         name="phone"
-                        type="text"
+                        type="number"
                         class="form-control"
                         id="exampleFormControlInput1"
-                        placeholder="Enter Phone Number"
+                        placeholder="Enter Your Phone Number"
                       />
                     </div>
 
@@ -120,7 +130,6 @@
           </div>
 
           <!-- End of Enter New Student Modal -->
-
           <table class="table table-hover">
             <thead>
               <tr>
